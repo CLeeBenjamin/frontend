@@ -23,7 +23,7 @@ function App() {
         <p>
         <ul>
           {tasks.map(t => <li key={t.id}>{t.task}</li>)}
-          <div> {APIURL}</div>
+          <div> {process.env.NODE_ENV}</div>
         </ul>
         </p>
         <a
