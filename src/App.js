@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import APIURL from './apiEnd';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <p>
         <ul>
           {tasks.map(t => <li key={t.id}>{t.task}</li>)}
+          <div> {APIURL}</div>
         </ul>
         </p>
         <a
