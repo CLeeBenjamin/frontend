@@ -1,4 +1,4 @@
-let prodEndpoint = "https://todo-production-c8c7.up.railway.app"
+let prodEndpoint = "https://todo-production-c34a.up.railway.app/todos"
 let devEndpoint = "http://localhost:3001"
 
 let APIURL = process.env.NODE_ENV === "production" ? prodEndpoint : devEndpoint
