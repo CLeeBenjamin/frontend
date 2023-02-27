@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import APIURL from './apiEnd';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
 
   
   useEffect(() => {
-    fetch("http://localhost:3001/todos")
+    fetch(APIURL)
     .then(result => result.json())
     .then(data => setTasks(data))
   });
